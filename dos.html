@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - MB Barber</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #e0e0e0; margin: 0; padding: 0; }
+        header { background-color: #1a1a1a; padding: 30px 20px; text-align: center; border-bottom: 3px solid #bba14f; }
+        h1 { margin: 0; color: #ffffff; font-size: 2.5em; text-transform: uppercase; }
+        nav { display: flex; justify-content: center; background-color: #000000; padding: 15px 0; }
+        nav a { color: #ffffff; text-decoration: none; margin: 0 20px; font-size: 1.1em; font-weight: bold; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: #bba14f; }
+        main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .subtitulo { text-align: center; font-size: 1.2em; color: #cccccc; margin-bottom: 40px; }
+        .contenedor-contacto { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+        .tarjeta { background-color: #1a1a1a; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+        .tarjeta h3 { color: #bba14f; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 0; text-transform: uppercase; }
+        .tarjeta p { line-height: 1.6; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 12px; font-size: 1.05em; }
+        .resaltado { color: #bba14f; font-weight: bold; }
+        .mapa-box { width: 100%; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.5); margin-bottom: 40px; border: 2px solid #333; }
+        iframe { width: 100%; height: 350px; border: 0; display: block; }
+        .cierre { text-align: center; margin: 50px 0; background-color: #1a1a1a; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); }
+        .cierre h2 { color: #ffffff; font-size: 1.6em; line-height: 1.5; margin-top: 0; }
+        .cierre img { max-width: 100%; height: auto; border-radius: 8px; margin-top: 25px; box-shadow: 0 4px 8px rgba(0,0,0,0.6); }
+        footer { background-color: #1a1a1a; color: #777; text-align: center; padding: 20px; border-top: 1px solid #333; }
+
+        @media (max-width: 768px) {
+            .contenedor-contacto { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contacto MB Barber</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="uno.html">Catálogo</a>
+        <a href="dos.html">Contacto</a>
+    </nav>
+
+    <main>
+        <p class="subtitulo">Disponemos de varias alternativas para que puedas ponerte en contacto con nosotros de forma rápida.</p>
+
+        <div class="contenedor-contacto">
+            <div class="tarjeta">
+                <h3>Presencialmente</h3>
+                <p>Ven a visitarnos directamente a nuestro establecimiento físico para recibir asesoría inmediata.</p>
+                <p>
+                    <span class="resaltado">Dirección:</span><br>
+                    Camí de la Vall del Tremolar, 22<br>
+                    46910, Alfafar, Valencia
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Número de Contacto y Redes</h3>
+                <p>
+                    <span class="resaltado">Teléfono móvil:</span> +34 643 85 78 16<br>
+                    <span class="resaltado">WhatsApp:</span> Puedes escribirnos o llamarnos directamente a nuestro número.
+                </p>
+                <p><span class="resaltado">Nuestras Redes Sociales:</span></p>
+                <ul>
+                    <li>📸 <strong>Instagram:</strong> @mbbarbershop</li>
+                    <li>🎵 <strong>TikTok:</strong> @Somosmbbarbers</li>
+                    <li>🐦 <strong>Twitter (X):</strong> @Mbbarberstudio</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mapa-box">
+            <iframe src="https://maps.google.com/maps?q=Cami%20Vall%20del%20Tremolar%2022,%20Alfafar&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="cierre">
+            <h2>¡Ya lo sabes! MB Barber no es solo una barbería, es cuidado personal y confianza; lo que necesitas para ser tú mismo. ¡Ven con nosotros!</h2>
+            <img src="imagenes/mbbarber.jpg" alt="Cuidado personal en MB Barber">
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 MB Barber. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

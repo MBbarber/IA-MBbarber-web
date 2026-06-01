@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - MB Barber</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #e0e0e0; margin: 0; padding: 0; }
+        header { background-color: #1a1a1a; padding: 30px 20px; text-align: center; border-bottom: 3px solid #bba14f; }
+        h1 { margin: 0; color: #ffffff; font-size: 2.5em; text-transform: uppercase; }
+        nav { display: flex; justify-content: center; background-color: #000000; padding: 15px 0; }
+        nav a { color: #ffffff; text-decoration: none; margin: 0 20px; font-size: 1.1em; font-weight: bold; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: #bba14f; }
+        main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .intro { text-align: center; font-size: 1.1em; margin-bottom: 40px; color: #cccccc; line-height: 1.6; }
+        h2 { color: #bba14f; border-bottom: 2px solid #bba14f; padding-bottom: 10px; margin-top: 40px; text-transform: uppercase; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #1a1a1a; box-shadow: 0 4px 8px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #333; }
+        th { background-color: #bba14f; color: #000000; font-size: 1.1em; text-transform: uppercase; font-weight: bold; }
+        tr:hover { background-color: #252525; }
+        .precio { font-weight: bold; color: #bba14f; text-align: right; white-space: nowrap; }
+        footer { background-color: #1a1a1a; color: #777; text-align: center; padding: 20px; margin-top: 40px; border-top: 1px solid #333; }
+        .btn-volver { display: block; width: 64px; height: 64px; margin: 40px auto 0; transition: transform 0.3s; }
+        .btn-volver:hover { transform: scale(1.15); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Servicios</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="uno.html">Catálogo</a>
+        <a href="dos.html">Contacto</a>
+    </nav>
+
+    <main>
+        <p class="intro">
+            MB Barber cuenta con un amplio catálogo tanto de servicios como de productos. Dependiendo de tu necesidad, obtendrás uno u otro, o incluso combinar ambos. Aquí tienes nuestra línea de servicios y nuestra gama exclusiva "MB Products":
+        </p>
+
+        <h2>Cortes de Cabello</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th style="text-align: right;">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corte Clásico</td>
+                    <td>Corte tradicional a tijera o máquina con acabados rectos.</td>
+                    <td class="precio">15,00 €</td>
+                </tr>
+                <tr>
+                    <td>Corte Degradado (Fade)</td>
+                    <td>Corte moderno con transición perfecta (Skin fade, Mid fade, etc.).</td>
+                    <td class="precio">18,00 €</td>
+                </tr>
+                <tr>
+                    <td>Corte a Máquina</td>
+                    <td>Corte rápido y uniforme utilizando un solo número de cuchilla.</td>
+                    <td class="precio">12,00 €</td>
+                </tr>
+                <tr>
+                    <td>Corte Infantil</td>
+                    <td>Corte adaptado para niños (hasta los 12 años de edad).</td>
+                    <td class="precio">12,00 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Arreglos y Cuidados de Barba</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th style="text-align: right;">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Afeitado Tradicional</td>
+                    <td>Afeitado clásico con ritual de toalla caliente, navaja y masaje posterior.</td>
+                    <td class="precio">15,00 €</td>
+                </tr>
+                <tr>
+                    <td>Arreglo de Barba</td>
+                    <td>Recorte, hidratación profunda y diseño de forma adaptada a las facciones del rostro.</td>
+                    <td class="precio">12,00 €</td>
+                </tr>
+                <tr>
+                    <td>Perfilado Exprés</td>
+                    <td>Limpieza rápida de contornos (zona del cuello y pómulos) realizada con navaja.</td>
+                    <td class="precio">8,00 €</td>
+                </tr>
+                <tr>
+                    <td>Coloración de Barba</td>
+                    <td>Tinte especializado para disimular las canas o unificar el tono del vello facial.</td>
+                    <td class="precio">18,00 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Combos Especiales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th style="text-align: right;">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pack Clásico</td>
+                    <td>Incluye Corte de cabello Clásico + Arreglo de Barba completo.</td>
+                    <td class="precio">25,00 €</td>
+                </tr>
+                <tr>
+                    <td>Pack Premium</td>
+                    <td>Incluye Corte Degradado + Afeitado Tradicional + Lavado y peinado con producto.</td>
+                    <td class="precio">32,00 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="index.html">
+            <img src="imagenes/flecha.png" alt="Volver a la página de inicio" class="btn-volver">
+        </a>
+    </main>
+
+    <footer>
+        <p>© 2026 MB Barber. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
